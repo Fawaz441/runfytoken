@@ -1,0 +1,248 @@
+{
+  "tbc": "TBC",
+  "see-more": "See More",
+  "see-less": "See Less",
+  "copyright": "©2021 Zompot. All rights reserved.",
+  "error": {
+    "server": "A server error occurred2",
+    "email-taken": "Email is already taken",
+    "password-empty": "Password must not be empty",
+    "email-empty": "Email must not be empty",
+    "name-empty": "Name must not be empty",
+    "password-short": "Password must be at least 8 characters",
+    "email-invalid": "The email you entered was invalid",
+    "email-already-subscribed": "That email is already subscribed",
+    "password-needs-nums-letters": "The password must have at least 1 number and 1 letter",
+    "incorrect-combination": "Incorrect email and password combination"
+  },
+  "success": {
+    "updated-user": "Successfully updated user info"
+  },
+  "input": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter Your Name"
+    },
+    "username-email": {
+      "label": "Username/Email",
+      "placeholder": "Enter Username or Email"
+    },
+    "phone": {
+      "label": "Phone number(Optional)",
+      "placeholder": "Phone number(Optional)"
+    },
+    "nationality": {
+      "label": "Nationality",
+      "placeholder": "Nationality"
+    },
+    "email": {
+      "example": "example@example.com",
+      "label": "Email",
+      "placeholder": "Enter Email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter Password"
+    },
+    "password-repeat": {
+      "label": "Password Repeat",
+      "placeholder": "Enter Password Again"
+    },
+    "charity": {
+      "label": "Charity"
+    }
+  },
+  "form": {
+    "register": "Register For Presale",
+    "purchase": "Purchase Details",
+    "signin": "Sign In",
+    "forgot-pass": "Forgot password?",
+    "pass-reminder": "Password Reminder",
+    "account": "Don’t Have an account?",
+    "account2": "Have an account?",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy Policy",
+    "and": "and",
+    "agree": "I agree"
+  },
+
+  "button": {
+    "presale": "Join PreSale Now!",
+    "market": "LAUNCH MARKET",
+    "seeroadmap": "SEE ROADMAP",
+    "save": "Save",
+    "send": "Send",
+    "saving": "Saving",
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "signing-up": "Signing Up",
+    "login": "Login",
+    "logging-in": "Logging In",
+    "join": "Join FreeWoly!",
+    "view-whitepaper": "Whitepaper",
+    "register": "Register - Join FreeWoly",
+    "create-account": "Create Account"
+  },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "disconnect": "Disconnect Wallet"
+  },
+  "menu": {
+    "menu": "Menu",
+    "more": "More",
+    "home": "Home",
+    "APT": "APT",
+    "whyus": "WHY US",
+    "aboutus": "ABOUT US",
+    "market": "NFT MARKETPLACE",
+    "faq": "FAQ",
+    "team": "OUR TEAM",
+    "whitepaper": "Whitepaper",
+    "roadmap": "ROADMAP",
+    "tokenomics": "TOKENOMICS",
+    "contact": "Contact",
+    "terms": "Terms of Use",
+    "cookie-policy": "Cookie Policy"
+  },
+  "socials": {
+    "telegram": "Telegram",
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "discord": "Discord"
+  },
+  "countdown": {
+    "days": "Days",
+    "label": "Launch Countdown",
+    "coming-soon": "Coming Soon"
+  },
+  "footer": {
+    "text": ""
+  },
+  "title": {
+    "title": "heads up! <span class=\"yellow\">Zompot token</span> will be available for pre-sale ın",
+    "presale-token-price": "A colorful, magical manga art virtual world for fans,<br>NFT collectors, artists, and content\n                        creators"
+  },
+  "welcome": {
+    "title": "You are welcome to the\n                        wonderful world Zompot token Ecosystem!",
+    "content": "This is a unique market in which we may investigate how to empower users of our product by\n                        imagining new methods that benefit themselves as well as other people."
+  },
+  "why": {
+    "title": "Why Us",
+    "content": "With Zompot, your investment will always be protected against inflation in a secure platform\n                        while giving you the flexibility of its usage.",
+    "content2": "With its successful protocol, Zompot aims to lead a new era in both fiat and blockchain\n                        economies which will impact the newcomers to the market to a stable and improving strategy.\n                        Zompot targets to solve the issues with a flexible policy and stable pricing strategy, making\n                        itself viable for use in the everyday lives of its users so that they will not only be using the\n                        token but also benefit by being investors."
+  },
+  "about": {
+    "title": "About Zompot",
+    "content": "Zompot is created to lead the market! It aims to create safe and secure investment\n                            options\n                            for\n                            its investors.",
+    "content2": "As a fungible token on BEP20, all units of a currency will remain equal. When you receive the money within a currency, it will not come with any history from the previous users of the currency or the users should have an easy way to disassociate themselves from that history, thus keeping all coins equal.\n                            At the same time, any user will be able to act as an auditor to guarantee the financial integrity of the public ledger without compromising others' privacy. Zompot tackles privacy issues by unlinking transactions from the payment’s origin.\n                            The protocol will issue Zompot currencies pegged to USD, EUR, GBP, CNY, JPY and the IMF SDR. Over time, more currencies will be added to the list by user voting. The system supports atomic swaps among Zompot currencies at their market exchange rates."
+  },
+  "market": {
+    "title": "NFT MARKETPLACE",
+    "content": "Zompot token formulates and constructs decentralized anonymous payment schemes (DAP schemes).",
+    "content2": "In Zompot’s system, a unique valid snapshot of the currency’s ledger is available to all users\n                        at any given time. The construction allows users to mint, merge, and split coins.\n                        Zompot is a concrete implementation based on robust strategy and planning. It entails carefully\n                        instantiating the cryptographic ingredients of the construction to ensure that the heaviest\n                        component, is efficient enough in practice."
+  },
+  "team": {
+    "title": "Our Team"
+  },
+  "what-list": {
+    "item1": {
+      "title": "MBanch art avatars",
+      "description": "Metaverse members can make their own manga-inspired character"
+    },
+    "item2": {
+      "title": "Create-your-own-venue",
+      "description": "Landowners can develop art galleries, cinemas, meeting places, and\n                                more"
+    },
+    "item3": {
+      "title": "Trade NFTs",
+      "description": "Manga artists can showcase their work and sell art as NFTs"
+    },
+    "item4": {
+      "title": "Engaged community",
+      "description": "MBanch gives people the chance to meet other manga fans and build a\n                                community"
+    },
+    "item5": {
+      "title": "Thriving ecosystem",
+      "description": "The MBanch token powers the ecosystem and is backed by NFTs and smart\n                                contracts"
+    },
+    "item6": {
+      "title": "Built on Binance",
+      "description": "MBanch is built on the Binance Smart Chain for low fee and high speed\n                                transactions"
+    }
+  },
+  "info-list": {
+    "item1": {
+      "title": "Fun AR P2E Game",
+      "description": "Earn money playing a fun game that blends real-life adventure and video gaming"
+    },
+    "item2": {
+      "title": "Thriving Community",
+      "description": "Join a fun, colourful world centered around Woly’s adventures, earn money and trade NFTs"
+    },
+    "item3": {
+      "title": "Memecoin",
+      "description": "The FreeWoly community will be powered by its very own memecoin, $FWoly"
+    }
+  },
+  "tokenomics": {
+    "title": "Tokenomics",
+    "allocation": "Token Allocation",
+    "allocation2": "5% of 30% will be unlocked each month after the ecosystem and\n                development phase.",
+    "legal": "Legal",
+    "ecosystem": "Ecosystem And Development",
+    "team": "The Team",
+    "partnership": "-Partnerships & Advisors",
+    "pre-sale": "-Pre-sale",
+    "airdrops": "-Airdrops",
+    "marketing": "Marketing",
+    "model": "Model",
+    "deflationary": "Deflationary",
+    "decimals": "Decimals",
+    "supply": "Token Supply",
+    "blockchhain": "Blockchhain",
+    "price": "Launch Price: $0.005",
+    "contract": "Contract",
+    "sales": "Public Sales",
+    "sales2": "Private Sales",
+    "sales2phases": "In 2 phases"
+  },
+  "roadmap": {
+    "title": "ROADMAP",
+    "q1": {
+      "label": "Q1 2022",
+      "stage1": "PHASE 1",
+      "stage2": "Concept development\n                            Strategy development\n                            Starting the design",
+      "stage3": "Soon to be completed"
+    },
+    "q2": {
+      "label": "Q3 2022",
+      "stage1": "PHASE 2",
+      "stage2": "Technical whitepaper publishing\n                            Start the first pre-sales with 10% of the allocation of the total token amount."
+    },
+    "q3": {
+      "label": "Q4 2022",
+      "stage1": "PHASE 3",
+      "stage2": "Publishing of the updated version of the whitepaper with the results of the first pre-sales.\n                            The second pre-sales with 5% of the allocation of the total token amount."
+    },
+    "q4": {
+      "label": "Q1 2023",
+      "stage1": "PHASE 4",
+      "stage2": "Exchange listing\n                            Start of public sales\n                            Airdrops"
+    },
+    "q5": {
+      "label": "Q3 2023",
+      "stage1": "PHASE 5",
+      "stage2": "Developments and improvements\n                            Report publishing for the first 6 months of the Zompot token"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "total-redistribution": "Total Redistribution",
+    "total-tokens": "Total APT Tokens",
+    "community": "APT Community"
+  },
+  "login-signup": {
+    "title": "Login^/Sign Up",
+    "link-button": "Sign Up / Login"
+  }
+}
