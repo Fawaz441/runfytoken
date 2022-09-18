@@ -122,6 +122,7 @@ body {
     background-color: #0F101A;
     overflow-x: hidden;
     top: 0 !important;
+    cursor: none;
 }
 
 ol,
@@ -2750,4 +2751,71 @@ table {
     -ms-transition-delay: 0.9s;
     -o-transition-delay: 0.9s;
     transition-delay: 0.9s;
+}
+
+/* styling */
+.shapes {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape.shape-1 {
+    background: rgba(114, 233, 126, 0.1);
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+}
+
+.shape.shape-2 {
+    background: rgba(114, 233, 126, 0.3);
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+}
+
+.shape.shape-3 {
+    background: #0F101A;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+}
+
+.wrapper {
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100vh; */
+    width: 100vw;
+    /* background-color: #fff; */
+    mix-blend-mode: screen;
+}
+
+.cursor {
+    position: fixed;
+    background-color: rgb(114, 233, 126);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: -10px 0 0 -10px;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+::selection,
+::-moz-selection {
+    color: #fff;
+    background-color: #2128bd;
 }
