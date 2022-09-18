@@ -127,3 +127,19 @@ document.addEventListener("mousemove", (evt) => {
     stagger: -0.1,
   });
 });
+
+gsap.to(".preloader", {
+  width: window.innerWidth,
+  duration: 0.5,
+});
+
+gsap.to(".wrapper", {
+  y: 0,
+  delay: 0.5,
+  opacity: 1,
+});
+
+gsap.to(".preloader", {
+  width: 0,
+  delay: 1,
+});

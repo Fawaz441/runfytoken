@@ -2775,7 +2775,7 @@ table {
 }
 
 .shape.shape-2 {
-    background: rgba(114, 233, 126, 0.3);
+    background: #000;
     width: 440px;
     height: 440px;
     margin: -220px 0 0 -220px;
@@ -2818,4 +2818,24 @@ table {
 ::-moz-selection {
     color: #fff;
     background-color: #2128bd;
+}
+
+/* animations */
+.relative {
+    position: relative;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: rgb(114, 233, 126);
+    height: 100vh;
+    z-index: -1;
+}
+
+.wrapper {
+    opacity: 0;
+    transform: translateY(-100px)
 }
