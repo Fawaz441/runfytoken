@@ -30,10 +30,24 @@ body {
     padding-right: 50px;
 }
 
+@media(max-width:600px) {
+    .wrapper>section:not(.hero) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 section.welcome-text {
     background-color: rgb(24, 24, 24);
 }
 
 .dumbell-svg {
     transform: scale(0.6);
+}
+
+.mobile-hero {
+    background: url(../images/1headermainview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

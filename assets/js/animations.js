@@ -113,3 +113,11 @@ gsap.to(".runfy-description-3", {
     trigger: ".runfy-description-1",
   },
 });
+
+gsap.to(".floate", {
+  duration: 2,
+  y: 20,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
