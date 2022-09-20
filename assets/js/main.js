@@ -99,6 +99,7 @@ if (typeof gt != "undefined") {
     });*/
 
   $(".mobile-menu").click(function () {
+    console.log("clicked");
     $("body").toggleClass("nav-open");
   });
 

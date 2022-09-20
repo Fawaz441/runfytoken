@@ -86,7 +86,7 @@ gsap.to(".runfy-description-1", {
   text: `Runfy is a 100% community-driven platform that empowers members to
   take control of their health and wellness.`,
   scrollTrigger: {
-    trigger: ".runfy-description-1",
+    trigger: "#what",
   },
 });
 
@@ -98,7 +98,7 @@ gsap.to(".runfy-description-2", {
   the platform built on the BSC (Binance Smart Chain) which has one of the lowest
   transaction fees.`,
   scrollTrigger: {
-    trigger: ".runfy-description-1",
+    trigger: "#what",
   },
 });
 
@@ -110,7 +110,7 @@ gsap.to(".runfy-description-3", {
   money while keeping fit. Whatever your fitness goals may be, the Runfy team is here to
   assist you.`,
   scrollTrigger: {
-    trigger: ".runfy-description-1",
+    trigger: "#what",
   },
 });
 

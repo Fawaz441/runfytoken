@@ -51,3 +51,23 @@ section.welcome-text {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.dineuron-menu {
+    z-index: 1000000000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+}
+
+.dineuron-menu>div {
+    z-index: 1000000000;
+    position: fixed;
+    width: 100%;
+    background: black;
+}
+
+.nav-open .dineuron-menu {
+    padding-top: 0
+}
