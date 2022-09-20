@@ -1,117 +1,3 @@
-window.onload = function () {
-  lax.init();
-  lax.addDriver("scrollY", function () {
-    return window.scrollY;
-  });
-
-  // Add animation bindings to elements
-  // hero text
-  lax.addElements(".hero-text", {
-    scrollY: {
-      // translateX: [
-      //     ["elInY", "elCenterY", "elOutY"],
-      //     [0, 0, '-screenWidth/5'],
-      // ],
-      // opacity: [
-      //     ["elInY", "elCenterY", "elOutY"],
-      //     [1, 1, 0],
-      // ],
-      // scale: [
-      //     ["elInY", "elCenterY", "elOutY"],
-      //     [1, 1, 1.5],
-      // ]
-    },
-  });
-  // hero buttons
-  lax.addElements(".hero-buttons", {
-    scrollY: {
-      translateX: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 0, "screenWidth/5"],
-      ],
-      opacity: [
-        ["elInY", "elCenterY", "elOutY"],
-        [1, 1, 0.2],
-      ],
-    },
-  });
-  // bonus container
-  lax.addElements(".bonuscontainer", {
-    scrollY: {
-      scale: [
-        ["elInY", "elCenterY", "elOutY"],
-        [1, 1.05, 0.8],
-      ],
-    },
-  });
-  // white box
-  lax.addElements(".white-box", {
-    scrollY: {
-      scale: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0.4, 1, 1],
-      ],
-    },
-  });
-
-  // how it works text
-  lax.addElements(
-    ".what-is-text",
-    {},
-    {
-      scrollY: {
-        opacity: [
-          ["elInY", "elCenterY", "elOutY"],
-          [1, 1.05, 0.8],
-        ],
-      },
-    }
-  );
-  lax.addElements(
-    ".vision-mission",
-    {},
-    {
-      scrollY: {
-        translateY: [
-          ["elInY", "elCenterY", "elOutY"],
-          [-30, 0, 0],
-        ],
-      },
-    }
-  );
-};
-gsap.to(".runfy-description-1", {
-  duration: 5,
-  text: `Runfy is a 100% community-driven platform that empowers members to
-            take control of their health and wellness.`,
-  delay: 1,
-  scrollTrigger: {
-    trigger: ".runfy-description-1",
-  },
-});
-gsap.to(".runfy-description-2", {
-  duration: 5,
-  text: `Runfy token promotes everything relating to health and fitness
-                            while allowing users to earn as they keep fit. Our token $RUNF is the utility token of
-                            the platform built on the BSC (Binance Smart Chain) which has one of the lowest
-                            transaction fees.`,
-  delay: 5,
-  scrollTrigger: {
-    trigger: ".runfy-description-2",
-  },
-});
-gsap.to(".runfy-description-3", {
-  duration: 5,
-  text: `Conceptualized as smart technology, $RUNF Token aims to import
-                            health and fitness into the crypto space whilst giving members the leverage to earn
-                            money while keeping fit. Whatever your fitness goals may be, the Runfy team is here to
-                            assist you.`,
-  delay: 10,
-  scrollTrigger: {
-    trigger: ".runfy-description-3",
-  },
-});
-
 document.addEventListener("mousemove", (evt) => {
   const mouseX = evt.clientX;
   const mouseY = evt.clientY;
@@ -142,4 +28,88 @@ gsap.to(".wrapper", {
 gsap.to(".preloader", {
   width: 0,
   delay: 1,
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.registerPlugin(TextPlugin);
+
+// hero animations
+gsap.to(".hero-man", {
+  duration: 1,
+  y: -40,
+  scrollTrigger: {
+    trigger: "#what",
+    toggleActions: "play reverse reverse reverse",
+  },
+});
+
+gsap.to(".hero-bg", {
+  duration: 1,
+  y: -300,
+  scrollTrigger: {
+    trigger: "#what",
+    toggleActions: "play reverse reverse reverse",
+  },
+});
+
+gsap.to(".hero-rocks", {
+  duration: 1,
+  y: -60,
+  scrollTrigger: {
+    trigger: "#what",
+    toggleActions: "play reverse reverse reverse",
+  },
+});
+
+gsap.to(".hero-coins", {
+  duration: 1,
+  x: -100,
+  scrollTrigger: {
+    trigger: "#what",
+    toggleActions: "play reverse reverse reverse",
+  },
+});
+
+gsap.to(".hero-water", {
+  duration: 1,
+  x: -50,
+  scrollTrigger: {
+    trigger: "#what",
+    toggleActions: "play reverse reverse reverse",
+  },
+});
+// end hero animations
+
+gsap.to(".runfy-description-1", {
+  duration: 2,
+  text: `Runfy is a 100% community-driven platform that empowers members to
+  take control of their health and wellness.`,
+  scrollTrigger: {
+    trigger: ".runfy-description-1",
+  },
+});
+
+gsap.to(".runfy-description-2", {
+  duration: 2,
+  delay: 2,
+  text: `Runfy token promotes everything relating to health and fitness
+  while allowing users to earn as they keep fit. Our token $RUNF is the utility token of
+  the platform built on the BSC (Binance Smart Chain) which has one of the lowest
+  transaction fees.`,
+  scrollTrigger: {
+    trigger: ".runfy-description-1",
+  },
+});
+
+gsap.to(".runfy-description-3", {
+  duration: 2,
+  delay: 5,
+  text: `Conceptualized as smart technology, $RUNF Token aims to import
+  health and fitness into the crypto space whilst giving members the leverage to earn
+  money while keeping fit. Whatever your fitness goals may be, the Runfy team is here to
+  assist you.`,
+  scrollTrigger: {
+    trigger: ".runfy-description-1",
+  },
 });
