@@ -136,80 +136,80 @@ if (typeof gt != "undefined") {
 
 const API_URL = "https://api.runfytoken.io/api/v1";
 
-// $.ajax({
-//   url: `${API_URL}/projects/current`,
-//   success: function(data){
-//     let values = JSON.parse(data)
+$.ajax({
+  url: `${API_URL}/projects/current`,
+  success: function (data) {
+    let values = JSON.parse(data);
 
-//     $('.js-telegram').attr('href', values.social_media.telegram)
-//     $('.js-twitter').attr('href', values.social_media.twitter)
-//   }
-// });
+    $(".js-telegram").attr("href", values.social_media.telegram);
+    $(".js-twitter").attr("href", values.social_media.twitter);
+  },
+});
 
-// $.ajax({
-//   url: `${API_URL}/stages`,
-//   success: function (data) {
-//     let stages = JSON.parse(data);
-//     let start_date = new Date(stages.data[0].start_date).getTime();
-//     let text = "";
-//     let today = new Date();
+$.ajax({
+  url: `${API_URL}/stages`,
+  success: function (data) {
+    let stages = JSON.parse(data);
+    let start_date = new Date(stages.data[0].start_date).getTime();
+    let text = "";
+    let today = new Date();
 
-//     $('.js-p1-bonus').text(stages.data[0].bonuses.base_percentage+'%')
-//     $('.js-p2-bonus').text(stages.data[1].bonuses.base_percentage+'%')
-//     $('.js-p3-bonus').text(stages.data[2].bonuses.base_percentage+'%')
+    $(".js-p1-bonus").text(stages.data[0].bonuses.base_percentage + "%");
+    $(".js-p2-bonus").text(stages.data[1].bonuses.base_percentage + "%");
+    $(".js-p3-bonus").text(stages.data[2].bonuses.base_percentage + "%");
 
-//     if (today < new Date(stages.data[0].start_date)) {
-//       start_date = new Date(stages.data[0].start_date);
-//       text = "PRESALE WILL START IN";
-//     }
-//     if (
-//       today > new Date(stages.data[0].start_date) &&
-//       today < new Date(stages.data[0].end_date)
-//     ) {
-//       start_date = new Date(stages.data[0].end_date);
-//       text = "PRESALE STAGE 1 WILL END IN";
-//     }
+    if (today < new Date(stages.data[0].start_date)) {
+      start_date = new Date(stages.data[0].start_date);
+      text = "PRESALE WILL START IN";
+    }
+    if (
+      today > new Date(stages.data[0].start_date) &&
+      today < new Date(stages.data[0].end_date)
+    ) {
+      start_date = new Date(stages.data[0].end_date);
+      text = "PRESALE STAGE 1 WILL END IN";
+    }
 
-//     if (
-//       today > new Date(stages.data[1].start_date) &&
-//       today < new Date(stages.data[1].end_date)
-//     ) {
-//       start_date = new Date(stages.data[1].end_date);
-//       text = "PRESALE STAGE 2 WILL END IN";
-//     }
+    if (
+      today > new Date(stages.data[1].start_date) &&
+      today < new Date(stages.data[1].end_date)
+    ) {
+      start_date = new Date(stages.data[1].end_date);
+      text = "PRESALE STAGE 2 WILL END IN";
+    }
 
-//     if (
-//       today > new Date(stages.data[2].start_date) &&
-//       today < new Date(stages.data[2].end_date)
-//     ) {
-//       start_date = new Date(stages.data[2].end_date);
-//       text = "PRESALE STAGE 3 WILL END IN";
-//     }
+    if (
+      today > new Date(stages.data[2].start_date) &&
+      today < new Date(stages.data[2].end_date)
+    ) {
+      start_date = new Date(stages.data[2].end_date);
+      text = "PRESALE STAGE 3 WILL END IN";
+    }
 
-//     $('.js-countdown-text').text(text)
+    $(".js-countdown-text").text(text);
 
-//     const second = 1000,
-//       minute = second * 60,
-//       hour = minute * 60,
-//       day = hour * 24;
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-//     const countDown = new Date(start_date).getTime(),
-//       x = setInterval(function () {
-//         const now = new Date().getTime(),
-//           distance = countDown - now;
+    const countDown = new Date(start_date).getTime(),
+      x = setInterval(function () {
+        const now = new Date().getTime(),
+          distance = countDown - now;
 
-//         document.querySelector(".e-m-days").innerText = Math.floor(
-//           distance / day
-//         );
-//         (document.querySelector(".e-m-hours").innerText = Math.floor(
-//           (distance % day) / hour
-//         )),
-//           (document.querySelector(".e-m-minutes").innerText = Math.floor(
-//             (distance % hour) / minute
-//           )),
-//           (document.querySelector(".e-m-seconds").innerText = Math.floor(
-//             (distance % minute) / second
-//           ));
-//       }, 0);
-//   },
-// });
+        document.querySelector(".e-m-days").innerText = Math.floor(
+          distance / day
+        );
+        (document.querySelector(".e-m-hours").innerText = Math.floor(
+          (distance % day) / hour
+        )),
+          (document.querySelector(".e-m-minutes").innerText = Math.floor(
+            (distance % hour) / minute
+          )),
+          (document.querySelector(".e-m-seconds").innerText = Math.floor(
+            (distance % minute) / second
+          ));
+      }, 0);
+  },
+});
