@@ -41,8 +41,16 @@ section.welcome-text {
     background-color: rgb(24, 24, 24);
 }
 
-.dumbell-svg {
-    transform: scale(0.6);
+@media(min-width:784px) {
+    .dumbell-svg {
+        transform: scale(0.6);
+    }
+}
+
+@media(max-width:784px) {
+    .floate>svg {
+        transform: scale(0.6);
+    }
 }
 
 .mobile-hero {
