@@ -66,6 +66,7 @@ section.welcome-text {
     position: fixed;
     width: 100%;
     background: black;
+    transform: translateZ(100px);
 }
 
 .nav-open .dineuron-menu {
